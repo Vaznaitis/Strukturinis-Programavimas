@@ -1,0 +1,3 @@
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/AntraPrograma/cmake-build-debug/CMakeFiles/AntraPrograma.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/AntraPrograma/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/AntraPrograma/cmake-build-debug/CMakeFiles/rebuild_cache.dir
