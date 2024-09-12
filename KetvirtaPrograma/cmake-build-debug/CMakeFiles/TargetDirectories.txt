@@ -1,0 +1,3 @@
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/KetvirtaPrograma/cmake-build-debug/CMakeFiles/KetvirtaPrograma.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/KetvirtaPrograma/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/KetvirtaPrograma/cmake-build-debug/CMakeFiles/rebuild_cache.dir
