@@ -1,0 +1,3 @@
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Spalio3atsiskaitymas/cmake-build-debug/CMakeFiles/Spalio3atsiskaitymas.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Spalio3atsiskaitymas/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Spalio3atsiskaitymas/cmake-build-debug/CMakeFiles/rebuild_cache.dir
