@@ -1,0 +1,3 @@
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Funkcijos, void Rugsejo 26-27/5th/cmake-build-debug/CMakeFiles/5th.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Funkcijos, void Rugsejo 26-27/5th/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Funkcijos, void Rugsejo 26-27/5th/cmake-build-debug/CMakeFiles/rebuild_cache.dir

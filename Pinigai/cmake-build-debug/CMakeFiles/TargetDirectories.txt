@@ -1,3 +1,0 @@
-C:/Users/vazna/Desktop/Strukturinis-Programavimas/Pinigai/cmake-build-debug/CMakeFiles/Pinigai.dir
-C:/Users/vazna/Desktop/Strukturinis-Programavimas/Pinigai/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/vazna/Desktop/Strukturinis-Programavimas/Pinigai/cmake-build-debug/CMakeFiles/rebuild_cache.dir

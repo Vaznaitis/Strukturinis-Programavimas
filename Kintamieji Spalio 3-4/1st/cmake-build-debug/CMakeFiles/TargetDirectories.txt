@@ -1,0 +1,3 @@
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Kintamieji Spalio 3-4/1st/cmake-build-debug/CMakeFiles/1st.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Kintamieji Spalio 3-4/1st/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/Kintamieji Spalio 3-4/1st/cmake-build-debug/CMakeFiles/rebuild_cache.dir
