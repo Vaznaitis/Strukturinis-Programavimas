@@ -1,23 +1,21 @@
 #include <iostream>
 #include <cstdlib>
 #include <cctype>
+#include <ctime>
 
 using namespace std;
 
 int generateRandomNumber() {
     return (rand() % 100) + 1;
+
 }
 
 // BALSIU TIKRINIMAS (CASE 1)
-void balses(char x) {
-    if (!isalpha(x)) {
-        cout << "Ivestas simbolis nera raide" << endl;
-        return;
+bool balses(char x) {
+    if (x == 'A' || x == 'a' || x == 'E' || x == 'e' || x == 'I' || x == 'i' || x == 'O' || x == 'o' || x == 'U' || x == 'u') {
+        return true;
     }
-    if (x == 'A' || x == 'a' || x == 'E' || x == 'e' || x == 'I' || x == 'i' || x == 'O' || x == 'o' || x == 'U' || x == 'u')
-        cout << "Ivesta raide yra balse" << endl;
-    else
-        cout << "Ivesta raide nera balse" << endl;
+        return false;
 }
 
 // DVIEJU SKAITMENU BENDRO DALIKLIO RADIMAS (CASE 2)
@@ -32,6 +30,7 @@ int euklidas(int a, int b) {
 
 // SKAICIU SPELIOJIMO ZAIDIMAS (CASE 3)
 void zaidimas() {
+    srand(time(NULL));
     int randskaic = generateRandomNumber();
     int spejimas;
     cout << "Spekite skaiciu nuo 1 iki 100" << endl;
@@ -53,11 +52,11 @@ void zaidimas() {
 void fizzbuzz(int n) {
     for (int i = 1; i <= n; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
-            cout << "Fizzbuzz" << endl;
+            cout << i << " Fizzbuzz" << endl;
         } else if (i % 3 == 0) {
-            cout << "Fizz" << endl;
+            cout << i << " Fizz" << endl;
         } else if (i % 5 == 0) {
-            cout << "Buzz" << endl;
+            cout << i << " Buzz" << endl;
         } else {
             cout << i << endl;
         }
@@ -82,7 +81,8 @@ void meniu() {
                 char raide;
                 cout << "Iveskite raide:" << endl;
                 cin >> raide;
-                balses(raide);
+                string test = balses(raide) == true ? "Balse" : "Ne balse";
+                cout << test << endl;
                 break;
             }
             case 2: {
@@ -120,5 +120,6 @@ void meniu() {
 
 int main() {
         meniu();
+
         return 0;
     }
