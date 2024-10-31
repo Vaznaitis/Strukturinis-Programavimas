@@ -1,0 +1,3 @@
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/3Praktine/cmake-build-debug/CMakeFiles/3Praktine.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/3Praktine/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/vazna/Desktop/Strukturinis-Programavimas/3Praktine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
