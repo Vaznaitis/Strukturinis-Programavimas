@@ -98,9 +98,7 @@ string UzsifravimasASCII(char tekstas[],char raktas[]) {
                 indeksasRakto=x;
             }
             if(indeksasTeksto != -1 && indeksasRakto != -1) {
-                int indeksasRezultato = ((indeksasTeksto - asciiPradzia) + (indeksasRakto - asciiPradzia)) % asciiIlgis +
-                                        asciiPradzia;
-
+                int indeksasRezultato = ((indeksasTeksto - asciiPradzia) + (indeksasRakto - asciiPradzia)) % asciiIlgis + asciiPradzia;
                 rezultatas[i] = (unsigned char)indeksasRezultato;
                 indeksasTeksto=-1;
                 indeksasRakto=-1;
@@ -114,7 +112,42 @@ string UzsifravimasASCII(char tekstas[],char raktas[]) {
         rezultatasString=rezultatasString + rezultatas[i];
     }return rezultatasString;
 }
+string DesifravimasASCII(char tekstas[],char raktas[]) {
+    char rezultatas[100];
+    int asciiPradzia=33,asciiPabaiga=126;
+    int asciiIlgis= asciiPabaiga-asciiPradzia+1;
+    int indeksasTeksto=-1;
+    int indeksasRakto=-1;
+    int tekstoIlgis = strlen(tekstas);
+    string raktasString = raktas;
+    while (raktasString.length() < strlen(tekstas)) {
+        raktasString.append(raktasString.begin(), raktasString.end());
+    }
+    strcpy(raktas, raktasString.c_str());
+    for(int i = 0; i < tekstoIlgis; i++) {
 
+        for(int x = asciiPradzia; x < asciiPabaiga; x++) {
+            if(tekstas[i] == static_cast<unsigned char>(x)) {
+                indeksasTeksto=x;
+            }
+            if(raktas[i] == static_cast<unsigned char>(x)) {
+                indeksasRakto=x;
+            }
+            if(indeksasTeksto != -1 && indeksasRakto != -1) {
+                int indeksasRezultato = ((indeksasTeksto - asciiPradzia) - (indeksasRakto - asciiPradzia) + asciiIlgis) % asciiIlgis + asciiPradzia;
+                rezultatas[i] = (unsigned char)indeksasRezultato;
+                indeksasTeksto=-1;
+                indeksasRakto=-1;
+            }
+
+        }
+
+    }
+    string rezultatasString="";
+    for (int i = 0; i < tekstoIlgis; i++) {
+        rezultatasString=rezultatasString + rezultatas[i];
+    }return rezultatasString;
+}
 int main() {
     char tekstas[100];
     char raktas[100];
@@ -164,6 +197,13 @@ int main() {
                 cin>>ascRaktas;
                 rezultatas = UzsifravimasASCII(ascTekstas, ascRaktas);
                 cout << "Uzsifruotas tekstas: "<< rezultatas << endl;
+            }else if (pasirinkti==2) {
+                cout <<"Irasykite teksta kuri norite desifruoti:"<<endl;
+                cin>>ascTekstas;
+                cout <<"Irasykite rakta kuri norite naudoti:"<<endl;
+                cin>>ascRaktas;
+                rezultatas = DesifravimasASCII(ascTekstas, ascRaktas);
+                cout << "Desifruotas tekstas: "<< rezultatas << endl;
             }
 
         } else if(pasirinkimas != 3){
