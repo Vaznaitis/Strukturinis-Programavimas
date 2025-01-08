@@ -8,8 +8,7 @@ const char ABECELE[26] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'
 string Uzsifravimas(char tekstas[],char raktas[]) {
     char rezultatas[100];
     int indeksasTeksto=-1;
-    int indeksasRakto=-1;
-    int indeksasRezultato;
+..00/.,/;,'pl-l';,;lk    int indeksasRakto=-1; indeksasRezultato;
     int tekstoIlgis = strlen(tekstas);
     string raktasString = raktas;
     while (raktasString.length() < strlen(tekstas)) {
@@ -52,6 +51,7 @@ string Desifravimas(char tekstas[],char raktas[]) {
         raktasString.append(raktasString.begin(), raktasString.end());
     }
     strcpy(raktas, raktasString.c_str());
+
     for(int i = 0; i < tekstoIlgis; i++) {
 
         for(int x = 0; x < sizeof(ABECELE); x++) {
