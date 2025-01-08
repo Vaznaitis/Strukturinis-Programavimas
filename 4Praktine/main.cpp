@@ -28,7 +28,7 @@ void getData(menuItemType menuList[]) {
 void showMenu(const menuItemType menuList[], int dydis) {
     cout << "Pasiulymai:" << endl;
     for (int i = 0; i < dydis; i++) {
-        cout << i + 1 << ". " << menuList[i].menuItem << fixed << setprecision(2) << menuList[i].menuKaina << "€" << endl;
+        cout << i + 1 << ". " << setw(50) << left << menuList[i].menuItem << right << fixed << setprecision(2) << menuList[i].menuKaina << endl;
     }
 }
 
@@ -45,17 +45,17 @@ void printCheck(const vector<pair<int, int>>& uzsakymas, const menuItemType menu
         double suma = menuList[skaicius].menuKaina * kiekis;
         viskas += suma;
 
-        cout << kiekis << " " << menuList[skaicius].menuItem << fixed << setprecision(2) << suma << "€" << endl;
+        cout << kiekis << " " << menuList[skaicius].menuItem << fixed << setprecision(2) << suma << endl;
     }
 
     double mokesciai = viskas * 0.21;
     double sumaaa = viskas + mokesciai;
 
-    cout << "Mokesciai: " << fixed << setprecision(2) << mokesciai << "€" << endl;
-    cout << "Galutine suma: " << fixed << setprecision(2) << sumaaa << "€" << endl;
+    cout << setw(30) << left << "Mokesciai: " << fixed << setprecision(2) << right << mokesciai << endl;
+    cout << setw(30) << left << "Galutine suma: " << fixed << setprecision(2) << right << sumaaa << endl;
 
-    saskaitaFile << "Mokesciai: " << fixed << setprecision(2) << mokesciai << "€" << endl;
-    saskaitaFile << "Galutine suma: " << fixed << setprecision(2) << sumaaa << "€" << endl;
+    saskaitaFile << setw(30) << left << "Mokesciai: " << fixed << setprecision(2) << right << mokesciai << endl;
+    saskaitaFile << setw(30) << left << "Galutine suma: " << fixed << setprecision(2) << right << sumaaa << endl;
 
     saskaitaFile.close();
 }
@@ -74,8 +74,8 @@ int main() {
 
     while (true) {
         showMenu(menuList, meniuDydis);
-        cout << "Pasirinkite ka norite uzsisakyti:" << endl;
         cout << "Pasirinkite 0 jei norite uzbaigti uzsakyma" << endl;
+        cout << "Pasirinkite ka norite uzsisakyti:" << endl;
         cin >> pasirinkimas;
 
         if (pasirinkimas == 0) {
